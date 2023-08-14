@@ -1,0 +1,95 @@
+:root {
+    --fondo-main:#181719;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .1s linear;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--fondo-main);
+}
+
+/* Header */
+.header{
+    padding: 1.25rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 100fr 1fr;
+
+}
+.lbl-menu{
+    position: relative;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.lbl-menu #sp1,#sp2,#sp3{
+    position: absolute;
+    content: '';
+    background-color: white;
+    height: 5px;
+    width: 40px;
+    transition: all .3s ease;
+}
+#sp2{
+    top: 11px;
+}
+#sp3{
+    top: 22px;
+}
+#btn-menu{
+    display: none;
+}
+#btn-menu:checked ~ .header #sp-interior{
+    display: none;
+}
+#btn-menu:checked ~ .lbl-menu #sp1 {
+    transform: rotate(140deg);
+    top: 10px;
+}
+#btn-menu:checked ~ .lbl-menu #sp2 {
+    opacity: 0;
+}
+#btn-menu:checked ~ .lbl-menu #sp3 {
+    transform: rotate(40deg);
+    top: 10px;
+}
+#btn-menu:checked ~ .nav {
+    display: grid;
+}
+/* Nav */
+.nav{
+    display: none;
+}
+.nav-links{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 80px;
+    right: 0;
+    display: grid;
+    background-color: var(--fondo-main);
+    place-items: center;
+    list-style: none;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.nav a:hover{
+    border-bottom: 2px solid gold;
+    color: white;
+}
