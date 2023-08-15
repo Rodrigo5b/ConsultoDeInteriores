@@ -10,6 +10,7 @@
     text-decoration: none;
     transition: .1s linear;
     scroll-behavior: smooth;
+    color: white;
 }
 body{
     width: 100%;
@@ -19,12 +20,16 @@ body{
 
 /* Header */
 .header{
-    padding: 1.25rem 1rem;
+    padding: 2rem 1.5rem;
     display: flex;
     justify-content: space-between;
     display: grid;
     grid-template-columns: 100fr 1fr;
-
+}
+#sp-interior{
+    font-family: 'Crimson Pro';
+    border: 1px solid white;
+    padding: .5rem;
 }
 .lbl-menu{
     position: relative;
@@ -92,4 +97,78 @@ body{
 .nav a:hover{
     border-bottom: 2px solid gold;
     color: white;
+}
+
+/* Main */
+.section{
+    padding: 2rem 1.5rem;
+    display: grid;
+    gap: 25px;
+}
+.h1{
+    font-family: 'Lora';
+    font-weight: 500;
+    font-size: 36px;
+}
+.section .p , b{
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+.interiores{
+    width: 100%;
+    padding: 2rem 1.5rem;
+    position: relative;
+}
+
+/* Articulo */
+.relative{
+    position: relative;
+}
+.section-articulo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.articulo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background: darkgrey;
+    width: 80%;
+    margin: auto;
+}
+.img-perfil{
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+}
+.articulo-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.perfil-nombre{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.articulo b{
+    font-family: 'Lora';
+    font-size: 18px;
+}
+
+/* Footer */
+.footer{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 1.5rem 0;
+}
+.footer p, footer a{
+    color: #BDBDBD;
+    text-decoration: none;
+    text-align: center;
+
 }

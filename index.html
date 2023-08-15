@@ -10,9 +10,11 @@
 </head>
 <body>
   <header class="header">
-    <span id="sp-interior">THIS INTERIOR</span>
-    <input type="checkbox" id="btn-menu">
-    <label for="btn-menu" class="lbl-menu">
+    <div>
+      <span id="sp-interior">THIS INTERIOR</span>
+    </div>
+    <input type="checkbox" id="btn-menu" onclick="ocultar();">
+    <label for="btn-menu" class="lbl-menu alternar">
       <span id="sp1"></span>
       <span id="sp2"></span>
       <span id="sp3"></span>
@@ -27,6 +29,34 @@
       </div>
     </nav>
   </header>
-
+  <section class="section">
+    <h1 class="h1">Modern interior</h1>
+    <p class="p">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+    <b>Read More  -></b>
+  </section>
+  <main class="relative" id="relative">
+    <img class="interiores" src="./img/photo1.png" alt="Interiores">
+    <section class="section-articulo">
+      <article class="articulo">
+        <div class="articulo-perfil">
+          <img class="img-perfil" src="./img/photo2.png" alt="aliza">
+          <div class="perfil-nombre">
+            <b>Aliza Webber</b>
+            <span>Interior designer</span>
+          </div>
+        </div>
+        <b>Designed in 2020 by <br> Aliza Webber</b>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>
+        created by 
+        <b> Rodrigo5b -</b>
+        <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a>
+    </p>
+    
+</footer>
+<script src="./script.js"></script>
 </body>
 </html>
